@@ -15,4 +15,3 @@ for (i = 0; i < dropdown.length; i++) {
 };
 
 
-var currentYear = new Date().getFullYear();
