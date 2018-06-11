@@ -1,5 +1,10 @@
 body{
   background-color: #f5f5f5;
+  margin-bottom: 100px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .sidenav {
@@ -49,4 +54,10 @@ body{
 }
 
 footer {
+  background: grey;
+  height: 100px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 16%;
 }

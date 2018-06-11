@@ -3,18 +3,18 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <title>UIX Style Guide &amp; Components</title>
+    <title>A11y Style Guide &amp; Components</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <! -- CDN link for PrismJS theme that highlights code examples -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.12.2/themes/prism.min.css.map" rel="stylesheet" /> -->
-    <link rel="stylesheet" type="text/css" href="./../gridcss/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
   </head>
   <body>
     <div class="container">
       <div class="row justify-content-end">
-        <div class="col-sm-3 sidenav">
+        <div class="col-sm-2 sidenav">
           <button class="dropdown-btn">
             Getting Started<i class="material-icons">arrow_drop_down</i>
           </button>
@@ -45,7 +45,7 @@
             <a href="#table">Table</a>
           </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-10">
           <h1>Getting Started</h1>
           <div id="icons">
             <h2>Icons</h2>
@@ -66,26 +66,23 @@
         </div>
       </div>
     </div>
-    <footer class={`page-footer ${renderWidth}`}>
-        <div class="footer-container footer-two-line primary-background">
-          <div class="right">
-            <a class="img-responsive" href="http://www.tma1.com/" target="_blank">
-              <img src={tmaLogo} alt="TMA-logo" class="footer-logo"/></a>
-          </div>
-          <div>
-            <p class="white-text footer-font">5121 Parkway Plaza Blvd. Charlotte, NC 28217</p>
-            <p class="white-text footer-font">Phone: 704.847.1234 | Fax: 704.708.8400</p>
-          </div>
+    <footer class={renderWidth}>
+      <div class="row justify-content-center">
+        <div class="primary-background">
+          <p class="footer-font">Accessible HTML Components</p>
         </div>
-        <div class="footer-container footer-font dark-primary-background">
-          <div class="text-center white-text">
-            Copyright &#169; Tax Management Associates. Inc. {currentYear} &nbsp; | &nbsp;  All Rights Reserved.
-          </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="dark-primary-background">
+          <p class="">
+            Copyright &#169; Kimberly Bell (currentYear) &nbsp; | &nbsp;  All Rights Reserved.
+          </p>
         </div>
-      </footer>
+      </div>
+    </footer>
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.12.2/prism.min.js.map"></script>
-        <script src="./style.js"></script>
+        <script type="text/javascript" src="style.js"></script>
      </body>
 </html>
